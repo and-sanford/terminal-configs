@@ -1,4 +1,4 @@
-# ~/.bashrc: Customizations for Bash shell
+
 
 # Enable color support for ls and grep
 export CLICOLOR=1
@@ -18,6 +18,18 @@ alias la='ls -A'
 alias l='ls -CF'
 alias ..='cd ..'
 alias ...='cd ../../'
+# Searching for a term recursively in a directory
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+
+# Simplify command usage
+alias h="history"
+alias j="jobs"
+alias c="clear"
+alias df="df -h"
+alias du="du -h --max-depth=1"
+alias free="free -h"
 
 # History settings
 HISTSIZE=1000          # Set history size to 1000
@@ -45,11 +57,4 @@ export PATH=$HOME/bin:$PATH
 # Enable faster command line completion (Tab completion)
 bind 'TAB:menu-complete'
 
-# Set a default language for the terminal
-export LANG=en_US.UTF-8
 
-# Custom prompt settings (Optional, adds a timestamp in the prompt)
-PROMPT_COMMAND='echo -n $(date "+%H:%M:%S") " "'
-
-# Enable terminal bell
-set bell-style audible

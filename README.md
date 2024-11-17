@@ -1,2 +1,2 @@
 # terminal-configs
-My default config for my terminal
+My default configs for my EC2 instances

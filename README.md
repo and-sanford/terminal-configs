@@ -1,2 +1,2 @@
 # terminal-configs
-My default creds for AWS
+My default config for my terminal
